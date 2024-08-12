@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: black;
+}
+
+header {
+    background-color: rgba(148, 184, 184, 0.466);
+}
+
+.nav-item {
+    font-size: 20px;
+}
+
+.nav-item a:hover {
+    border: 4px solid white;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+}
+
+#oferta article {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+    border: 2px solid #ccc;
+}
+
+#oferta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#oferta h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#oferta p {
+    font-size: 24px;
+    color: #333;
+    margin-top: 20px;
+}
+
+section h2,
+main h2 {
+    margin: 40px 0;
+}
+
+.preco {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+footer {
+    padding: 24px;
+    background-color: rgba(148, 184, 184, 0.466);
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 767px;
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .col-4 {
+        width: 100%; 
+        margin-bottom: 20px; /
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width:1023px) {
+    .container {
+        max-width: 1023px;
+        width: 100%;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px; 
+    }
+
+    .col-4 {
+        width: calc(50% - 20px); 
+    }
+}
